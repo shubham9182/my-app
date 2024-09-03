@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Define a color palette */
+:root {
+  --primary-color: #1C2536;
+  --secondary-color: #2A3A4B;
+  --accent-color: #4A90E2;
+  --text-color: #FFFFFF;
+  --background-color: #F4F7FA;
+  --border-color: #E0E4E8;
+}
+
+/* Apply global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Consistent Node Styles */
+.node {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+}
+
+/* Node Handle Styles */
+.reactflow__handle {
+  background-color: var(--accent-color);
+}
+
+/* Pipeline UI Wrapper */
+.pipeline-wrapper {
+  width: 100vw;
+  height: 70vh;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+}
+
+/* Controls Styling */
+.reactflow__controls {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+/* MiniMap Styling */
+.reactflow__minimap {
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Custom Scrollbar */
+.pipeline-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pipeline-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
